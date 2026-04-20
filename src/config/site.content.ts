@@ -2,80 +2,85 @@ import type { TaskKey } from '@/lib/site-config'
 
 export const siteContent = {
   navbar: {
-    tagline: 'Independent news desk',
+    tagline: 'Press wire & syndication',
   },
   footer: {
-    tagline: 'Simple publishing for press-style updates',
+    tagline: 'Distribution analytics for modern comms teams',
   },
   hero: {
-    badge: 'Latest updates',
-    title: ['Clear publishing, simple reading, no extra noise.'],
+    badge: 'National syndication',
+    title: ['Reach journalists and readers where decisions are made.'],
     description:
-      'A minimal article-style publishing template built for regular updates, announcements, and media distribution posts.',
+      'feedopr routes your story through a curated distribution network with structured reporting—built for teams that need clarity, not clutter.',
     primaryCta: {
-      label: 'Browse latest posts',
-      href: '/updates',
+      label: 'Submit press release',
+      href: '/create/mediaDistribution',
     },
     secondaryCta: {
-      label: 'Contact us',
-      href: '/contact',
+      label: 'View latest releases',
+      href: '/updates',
     },
-    searchPlaceholder: 'Search posts',
+    searchPlaceholder: 'Search releases',
     focusLabel: 'Latest',
-    featureCardBadge: 'editor note',
-    featureCardTitle: 'Recent updates appear directly on the homepage.',
+    featureCardBadge: 'distribution desk',
+    featureCardTitle: 'Wire-ready formatting and predictable timelines.',
     featureCardDescription:
-      'The homepage works as a clean front page so new posts stay visible without decorative sections getting in the way.',
+      'Draft, review, and publish with fields tuned for press workflows—without turning the homepage into a generic blog template.',
   },
   home: {
     metadata: {
-      title: 'Latest updates and newsroom posts',
+      title: 'feedopr — Press release distribution & syndication',
       description:
-        'Read the latest updates, announcements, and stories through a simple archive-first publishing experience.',
-      openGraphTitle: 'Latest updates and newsroom posts',
+        'Distribute announcements to thousands of digital endpoints, monitor pickup signals, and keep teams aligned with analytics built for comms.',
+      openGraphTitle: 'feedopr — Press release distribution',
       openGraphDescription:
-        'A simple publishing template for updates, announcements, and readable article pages.',
-      keywords: ['newsroom posts', 'latest updates', 'announcements', 'press articles'],
+        'Syndicated distribution, media targeting, and reporting in one calm, operator-friendly surface.',
+      keywords: [
+        'press release distribution',
+        'media syndication',
+        'PR wire',
+        'earned media',
+        'announcements',
+        'feedopr',
+      ],
     },
-    introBadge: 'About',
-    introTitle: 'A quiet publishing template made for regular updates.',
+    introBadge: 'Why teams choose feedopr',
+    introTitle: 'Built for distribution—not for decorative homepages.',
     introParagraphs: [
-      'This template is designed for sites that publish straightforward updates and want the homepage to behave like a clean front page rather than a product landing page.',
-      'Posts are visible immediately, archives stay easy to scan, and the reading page keeps the focus on the article itself.',
-      'The interface is intentionally simple so the site feels usable, familiar, and fast to update.',
+      'The surface is tuned for scanning headlines, comparing categories, and opening clean reading pages—matching how editorial and comms teams actually work.',
+      'Behind the UI, the same task routes and publishing flows stay compatible with the wider platform—so you can grow without a redesign later.',
     ],
-    sideBadge: 'What it prioritizes',
+    sideBadge: 'What you get',
     sidePoints: [
-      'Recent posts directly on the homepage.',
-      'Simple archive layout with sidebar search and recent items.',
-      'Readable article pages without comments or extra modules.',
-      'A publishing-first structure that stays easy to maintain.',
+      'Structured press pages with shareable metadata.',
+      'Archive views with filters that stay fast on mobile.',
+      'Analytics framing that highlights reach—not vanity charts.',
     ],
     primaryLink: {
-      label: 'Open archive',
+      label: 'Browse releases',
       href: '/updates',
     },
     secondaryLink: {
-      label: 'Contact desk',
+      label: 'Talk to us',
       href: '/contact',
     },
   },
   cta: {
-    badge: 'Get in touch',
-    title: 'Use this template when publishing regular updates matters more than visual effects.',
+    badge: 'Ready to ship your next announcement?',
+    title: 'Submit a release, track pickup, and keep stakeholders in the loop.',
     description:
-      'A straightforward layout for announcements, media coverage, partner updates, and newsroom-style content.',
+      'Start with a straightforward composer, publish to your wire, and use search-friendly pages that stay easy to read on every device.',
     primaryCta: {
-      label: 'Contact us',
-      href: '/contact',
+      label: 'Submit press release',
+      href: '/create/mediaDistribution',
     },
     secondaryCta: {
-      label: 'View archive',
-      href: '/updates',
+      label: 'Compare plans',
+      href: '/pricing',
     },
   },
-  taskSectionHeading: 'Latest posts',
-  taskSectionDescriptionSuffix: 'Read the newest published updates.',
+  taskSectionHeading: 'Latest press releases',
+  taskSectionDescriptionSuffix: 'Fresh announcements from the feedopr wire.',
 } as const
 
 export const taskPageMetadata: Record<Exclude<TaskKey, 'comment' | 'org' | 'social'>, { title: string; description: string }> = {
@@ -108,8 +113,8 @@ export const taskPageMetadata: Record<Exclude<TaskKey, 'comment' | 'org' | 'soci
     description: 'Open PDFs and downloadable files.',
   },
   mediaDistribution: {
-    title: 'Latest updates',
-    description: 'Read the latest published updates and announcements.',
+    title: 'Press releases',
+    description: 'Browse syndicated announcements, launches, and updates.',
   },
 }
 
@@ -128,14 +133,14 @@ export const taskIntroCopy: Record<
   comment: { title: 'Comments', paragraphs: ['Commentary and response posts.'], links: [{ label: 'Home', href: '/' }] },
   org: { title: 'Organizations', paragraphs: ['Organization pages and entities.'], links: [{ label: 'Home', href: '/' }] },
   mediaDistribution: {
-    title: 'Latest updates',
+    title: 'Press release archive',
     paragraphs: [
-      'This archive is designed for straightforward publishing: regular updates, announcements, and media-style posts presented in a clean reading format.',
-      'The layout stays simple so visitors can scan headlines quickly, open stories easily, and move through the archive without distraction.',
+      'Scan headlines by category, open clean reading pages, and share direct links with stakeholders.',
+      'Filters keep the archive usable on phones—without sacrificing density for desktop reviewers.',
     ],
     links: [
       { label: 'Home', href: '/' },
-      { label: 'Contact', href: '/contact' },
+      { label: 'Pricing', href: '/pricing' },
     ],
   },
 }
