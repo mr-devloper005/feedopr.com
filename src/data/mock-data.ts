@@ -757,7 +757,7 @@ export const mockTeamMembers: TeamMember[] = [
     name: 'Avery Brooks',
     role: 'Head of Community',
     avatar: 'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?w=200&h=200&fit=crop',
-    bio: 'Building programs that connect creators with meaningful collaborations.',
+    bio: 'Building programs that connect creators with meaningful collaborations across the platform.',
     location: 'Austin, TX'
   },
   {
@@ -765,15 +765,15 @@ export const mockTeamMembers: TeamMember[] = [
     name: 'Jordan Lee',
     role: 'Product Lead',
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop',
-    bio: 'Designing calm, curated experiences for modern teams.',
+    bio: 'Designing calm, curated experiences that help modern teams move faster and stay focused.',
     location: 'San Francisco, CA'
   },
   {
     id: 'team-3',
-    name: 'Priya Desai',
-    role: 'Engineering',
-    avatar: 'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?w=200&h=200&fit=crop',
-    bio: 'Focused on reliability, search, and delightful performance.',
+    name: 'Sofia Reyes',
+    role: 'Lead Engineer',
+    avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop',
+    bio: 'Focused on reliability, search performance, and building infrastructure that scales.',
     location: 'New York, NY'
   }
 ]

@@ -10,7 +10,6 @@ const columns = [
     title: 'Product',
     links: [
       { label: 'Press releases', href: '/updates' },
-      { label: 'Pricing', href: '/pricing' },
       { label: 'Submit a release', href: '/create/mediaDistribution' },
       { label: 'Search', href: '/search' },
     ],
@@ -20,7 +19,6 @@ const columns = [
     links: [
       { label: 'About', href: '/about' },
       { label: 'Contact', href: '/contact' },
-      { label: 'Careers', href: '/careers' },
       { label: 'Press room', href: '/press' },
     ],
   },
@@ -30,7 +28,6 @@ const columns = [
       { label: 'Privacy', href: '/privacy' },
       { label: 'Terms', href: '/terms' },
       { label: 'Cookies', href: '/cookies' },
-      { label: 'Developers', href: '/developers' },
     ],
   },
 ]

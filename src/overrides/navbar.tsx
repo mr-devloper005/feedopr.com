@@ -12,7 +12,6 @@ export const NAVBAR_OVERRIDE_ENABLED = true
 
 const mainNav = [
   { label: 'Press releases', href: '/updates' },
-  { label: 'Pricing', href: '/pricing' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
 ]
