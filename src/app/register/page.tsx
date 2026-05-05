@@ -9,11 +9,11 @@ import { REGISTER_PAGE_OVERRIDE_ENABLED, RegisterPageOverride } from '@/override
 function getRegisterConfig(kind: ReturnType<typeof getProductKind>) {
   if (kind === 'directory') {
     return {
-      shell: 'bg-[#f8fbff] text-slate-950',
-      panel: 'border border-slate-200 bg-white',
-      side: 'border border-slate-200 bg-slate-50',
-      muted: 'text-slate-600',
-      action: 'bg-slate-950 text-white hover:bg-slate-800',
+      shell: 'bg-background text-foreground',
+      panel: 'border border-border bg-card',
+      side: 'border border-border bg-secondary/40',
+      muted: 'text-muted-foreground',
+      action: 'bg-[#7B52AB] text-white hover:bg-[#6a4496]',
       icon: Building2,
       title: 'Create a business-ready account',
       body: 'List services, manage locations, and activate trust signals with a proper directory workflow.',
@@ -21,11 +21,11 @@ function getRegisterConfig(kind: ReturnType<typeof getProductKind>) {
   }
   if (kind === 'editorial') {
     return {
-      shell: 'bg-[#fbf6ee] text-[#241711]',
-      panel: 'border border-[#dcc8b7] bg-[#fffdfa]',
-      side: 'border border-[#e6d6c8] bg-[#fff4e8]',
-      muted: 'text-[#6e5547]',
-      action: 'bg-[#241711] text-[#fff1e2] hover:bg-[#3a241b]',
+      shell: 'bg-background text-foreground',
+      panel: 'border border-border bg-card',
+      side: 'border border-border bg-secondary/40',
+      muted: 'text-muted-foreground',
+      action: 'bg-[#7B52AB] text-white hover:bg-[#6a4496]',
       icon: FileText,
       title: 'Start your contributor workspace',
       body: 'Create a profile for essays, issue drafts, editorial review, and publication scheduling.',
@@ -33,22 +33,22 @@ function getRegisterConfig(kind: ReturnType<typeof getProductKind>) {
   }
   if (kind === 'visual') {
     return {
-      shell: 'bg-[#07101f] text-white',
-      panel: 'border border-white/10 bg-white/6',
-      side: 'border border-white/10 bg-white/5',
-      muted: 'text-slate-300',
-      action: 'bg-[#8df0c8] text-[#07111f] hover:bg-[#77dfb8]',
+      shell: 'bg-background text-foreground',
+      panel: 'border border-border bg-card',
+      side: 'border border-border bg-secondary/40',
+      muted: 'text-muted-foreground',
+      action: 'bg-[#7B52AB] text-white hover:bg-[#6a4496]',
       icon: ImageIcon,
       title: 'Set up your creator profile',
       body: 'Launch a visual-first account with gallery publishing, identity surfaces, and profile-led discovery.',
     }
   }
   return {
-    shell: 'bg-[#f7f1ea] text-[#261811]',
-    panel: 'border border-[#ddcdbd] bg-[#fffaf4]',
-    side: 'border border-[#e8dbce] bg-[#f3e8db]',
-    muted: 'text-[#71574a]',
-    action: 'bg-[#5b2b3b] text-[#fff0f5] hover:bg-[#74364b]',
+    shell: 'bg-background text-foreground',
+    panel: 'border border-border bg-card',
+    side: 'border border-border bg-secondary/40',
+    muted: 'text-muted-foreground',
+    action: 'bg-[#7B52AB] text-white hover:bg-[#6a4496]',
     icon: Bookmark,
     title: 'Create a curator account',
     body: 'Build shelves, save references, and connect collections to your profile without a generic feed setup.',
@@ -104,3 +104,4 @@ export default function RegisterPage() {
     </div>
   )
 }
+

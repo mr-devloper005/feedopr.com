@@ -158,12 +158,6 @@ export async function HomePageOverride() {
                 {siteContent.hero.primaryCta.label}
                 <ArrowRight className="h-4 w-4 opacity-90" />
               </Link>
-              <Link
-                href={siteContent.hero.secondaryCta.href}
-                className="inline-flex items-center justify-center rounded-full border border-[#1c045d]/20 bg-white px-6 py-3.5 text-sm font-semibold text-[#1c045d] shadow-sm transition hover:border-[#845ec2]/40 hover:bg-[#faf8ff]"
-              >
-                {siteContent.hero.secondaryCta.label}
-              </Link>
             </div>
             <dl className="mt-10 grid gap-4 sm:grid-cols-3">
               {[
@@ -384,24 +378,18 @@ export async function HomePageOverride() {
       <section className="relative overflow-hidden border-t border-[#1c045d]/10 bg-[#04004a] py-16 text-white">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_70%_0%,rgba(132,94,194,0.45)_0%,transparent_55%)]" />
         <div className="relative mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 px-4 sm:flex-row sm:items-center sm:px-6">
-          <div>
+          <div className="flex-1">
             <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#f3c5ff]/90">{siteContent.cta.badge}</p>
             <h2 className="mt-3 max-w-xl font-[family-name:var(--font-display)] text-2xl font-semibold tracking-[-0.02em] sm:text-3xl">{siteContent.cta.title}</h2>
             <p className="mt-3 max-w-xl text-sm text-white/70">{siteContent.cta.description}</p>
           </div>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex shrink-0 items-center sm:mr-[50px]">
             <Link
               href={siteContent.cta.primaryCta.href}
-              className="inline-flex items-center gap-2 rounded-full bg-[#f3c5ff] px-6 py-3 text-sm font-semibold text-[#04004a] shadow-lg shadow-black/20 transition hover:bg-white"
+              className="inline-flex items-center gap-2 rounded-full bg-[#f3c5ff] pl-6 pr-4 py-3 text-sm font-semibold text-[#04004a] shadow-lg shadow-black/20 transition hover:bg-white"
             >
               {siteContent.cta.primaryCta.label}
               <ArrowRight className="h-4 w-4" />
-            </Link>
-            <Link
-              href={siteContent.cta.secondaryCta.href}
-              className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/5 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/10"
-            >
-              {siteContent.cta.secondaryCta.label}
             </Link>
           </div>
         </div>

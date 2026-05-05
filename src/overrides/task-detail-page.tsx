@@ -96,8 +96,6 @@ export async function TaskDetailPageOverride({ slug }: { task: TaskKey; slug: st
             ) : null}
 
             <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground">
-              {date ? <time dateTime={post.publishedAt || undefined}>{date}</time> : null}
-              <span className="hidden sm:inline">·</span>
               <span>
                 By <span className="font-medium text-[#04004a]">{author}</span>
               </span>
@@ -188,11 +186,6 @@ export async function TaskDetailPageOverride({ slug }: { task: TaskKey; slug: st
                     <Link href={`/updates/${item.slug}`} className="group block text-sm font-semibold leading-snug text-[#04004a] hover:text-[#744fb1]">
                       {item.title}
                     </Link>
-                    {item.publishedAt ? (
-                      <p className="mt-1 text-[11px] text-muted-foreground">
-                        {new Date(item.publishedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
-                      </p>
-                    ) : null}
                   </li>
                 ))}
               </ul>
