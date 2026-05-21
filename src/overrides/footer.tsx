@@ -5,6 +5,7 @@ import { siteContent } from '@/config/site.content'
 
 export const FOOTER_OVERRIDE_ENABLED = true
 
+
 const columns = [
   {
     title: 'Product',
@@ -76,6 +77,7 @@ export function FooterOverride() {
             </div>
           ))}
         </div>
+
         <div className="mt-12 flex flex-col gap-4 border-t border-white/10 pt-8 text-xs text-white/50 sm:flex-row sm:items-center sm:justify-between">
           <p>
             &copy; {new Date().getFullYear()} {SITE_CONFIG.name}. All rights reserved.
